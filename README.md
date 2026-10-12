@@ -1,15 +1,17 @@
-# Placement Management System
+# Placement Management System on AWS
 
-A web-based placement management application that brings students, company recruiters, and administrators together in one platform to organize campus recruitment activities.
+A web-based Placement Management System designed to bring students, company recruiters, and administrators together on one platform to manage campus recruitment activities. The application is hosted using **Amazon Web Services (AWS)**, demonstrating cloud-based web application deployment and domain configuration.
 
 ## Overview
 
-The system provides separate role-based portals for students, companies, and administrators. It supports job vacancy management, student applications, interview coordination, and placement reporting.
+This project provides separate role-based portals for students, companies, and administrators. It supports job vacancy management, student applications, interview coordination, and placement reporting.
+
+The application is deployed with a custom domain configured through **Amazon Route 53**. The project demonstrates practical experience with AWS cloud hosting, DNS configuration, and deploying a PHP-based web application in a cloud environment.
 
 ## Features
 
 ### Student Portal
-- Manage student profile and resume information.
+- Manage student profiles and resume information.
 - Browse job opportunities and apply for vacancies.
 - Track applications and view interview information.
 
@@ -23,6 +25,22 @@ The system provides separate role-based portals for students, companies, and adm
 - Oversee jobs, applications, and interviews.
 - Review placement statistics and reports.
 - Export placement report data.
+
+## AWS Deployment
+
+- **Amazon Web Services (AWS):** Cloud platform used to host and deploy the application.
+- **Amazon Route 53:** Configured a hosted zone and DNS records for the custom domain `cloudwithhashir.in`.
+- **Custom Domain:** Configured domain access for the deployed application.
+- **PHP and MySQL:** Application and database technologies used by the system.
+
+## Project Highlights
+
+- Cloud deployment of a PHP-based web application.
+- Role-based access for students, companies, and administrators.
+- Custom domain and DNS configuration using Amazon Route 53.
+- Documentation of application screenshots and architecture.
+
+
 
 ## Application Screenshots
 
