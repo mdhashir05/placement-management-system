@@ -1,12 +1,14 @@
 # Placement Management System on AWS
 
-A web-based Placement Management System designed to bring students, company recruiters, and administrators together on one platform to manage campus recruitment activities. The application is hosted using **Amazon Web Services (AWS)**, demonstrating cloud-based web application deployment and domain configuration.
+A web-based Placement Management System deployed on **Amazon Web Services (AWS)** to bring students, company recruiters, and administrators together on one platform for managing campus recruitment activities.
 
 ## Overview
 
-This project provides separate role-based portals for students, companies, and administrators. It supports job vacancy management, student applications, interview coordination, and placement reporting.
+The application provides separate role-based portals for students, companies, and administrators. It supports job vacancy management, student applications, interview coordination, and placement reporting.
 
-The application is deployed with a custom domain configured through **Amazon Route 53**. The project demonstrates practical experience with AWS cloud hosting, DNS configuration, and deploying a PHP-based web application in a cloud environment.
+The application is hosted on an **Amazon EC2 instance** running Nginx as the web server, with MariaDB used for database management. **Amazon Route 53** is configured to manage DNS records for the custom domain `cloudwithhashir.in`.
+
+This project demonstrates practical experience in AWS cloud hosting, Linux server administration, web server configuration, database integration, and DNS management.
 
 ## Features
 
@@ -26,19 +28,23 @@ The application is deployed with a custom domain configured through **Amazon Rou
 - Review placement statistics and reports.
 - Export placement report data.
 
-## AWS Deployment
+## AWS Infrastructure and Technology Stack
 
-- **Amazon Web Services (AWS):** Cloud platform used to host and deploy the application.
-- **Amazon Route 53:** Configured a hosted zone and DNS records for the custom domain `cloudwithhashir.in`.
-- **Custom Domain:** Configured domain access for the deployed application.
-- **PHP and MySQL:** Application and database technologies used by the system.
+- **Amazon EC2:** Hosts the web application on a cloud-based virtual server.
+- **Nginx:** Serves the web application and handles incoming HTTP requests.
+- **MariaDB:** Stores and manages application data.
+- **Amazon Route 53:** Manages DNS records for the custom domain.
+- **PHP:** Implements the application's server-side functionality.
+- **HTML, CSS, and JavaScript:** Support the application's user interface.
 
 ## Project Highlights
 
-- Cloud deployment of a PHP-based web application.
-- Role-based access for students, companies, and administrators.
-- Custom domain and DNS configuration using Amazon Route 53.
-- Documentation of application screenshots and architecture.
+- Deployed a PHP-based web application on Amazon EC2.
+- Configured Nginx to serve the application.
+- Integrated MariaDB for database operations.
+- Configured DNS records through Amazon Route 53.
+- Implemented separate portals for students, companies, and administrators.
+- Documented the application interface and architecture for a cloud portfolio.
 
 
 
