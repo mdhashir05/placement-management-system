@@ -112,12 +112,12 @@ Portal access depends on the user's role and the application's authentication an
 
 ## Future Enhancements
 
-- Email notifications for application and interview updates.
-- Improved job search and filtering.
-- Additional placement analytics.
-- Enhanced security monitoring and access controls.
-- Responsive improvements for mobile devices.
-- Automated deployment workflows, if appropriate for the hosting environment.
+- **Amazon SES:** Email notifications for applications and interviews.
+- **Amazon CloudWatch:** Monitor EC2 performance and application logs.
+- **Amazon S3:** Store resumes and uploaded documents.
+- **AWS CodeDeploy:** Automate application deployments.
+- **Enhanced Security:** Configure HTTPS and strengthen AWS access controls.
+- **Scalability:** Use a load balancer and managed database as the application grows.
 
 ## Author
 
