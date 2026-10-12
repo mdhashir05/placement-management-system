@@ -70,7 +70,7 @@ Amazon Route 53 was used to configure a public hosted zone for the custom domain
 
 The diagram below provides a high-level logical view of the placement management application. Confirm that it matches the actual implementation before presenting it as a deployed cloud architecture.
 
-![Placement Management System architecture](architecture/placement-management-architecture.png)
+![Placement Management System architecture](placement-management-architecture.png)
 
 ## Technology Stack
 
