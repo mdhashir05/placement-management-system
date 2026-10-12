@@ -1,0 +1,13 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary / Log files
+*.log
+scratch/
+
+# Keep upload directories but ignore user uploads if needed
+# (Uncomment below if you don't want uploaded resumes tracked)
+# uploads/resume/*.pdf

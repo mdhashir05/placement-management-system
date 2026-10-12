@@ -1,0 +1,266 @@
+/* ============================================================
+   PLACEMENT MANAGEMENT SYSTEM - MODERN BLUE & WHITE THEME
+   Glassmorphism, Vibrant Gradients, Clean Micro-interactions
+   ============================================================ */
+
+:root {
+  --primary-color: #0d6efd;
+  --primary-dark: #0a58ca;
+  --primary-light: #e7f1ff;
+  --secondary-color: #4f46e5;
+  --accent-color: #06b6d4;
+  --bg-gradient: linear-gradient(135deg, #f0f4fd 0%, #e2eafc 100%);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(255, 255, 255, 0.6);
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --sidebar-width: 260px;
+  --topbar-height: 70px;
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+}
+
+/* Navbar */
+.app-header {
+  height: var(--topbar-height);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 0 1.5rem;
+}
+
+/* App Wrapper Layout */
+.app-layout {
+  display: flex;
+  margin-top: var(--topbar-height);
+  min-height: calc(100vh - var(--topbar-height));
+}
+
+.app-sidebar {
+  width: var(--sidebar-width);
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  position: fixed;
+  top: var(--topbar-height);
+  bottom: 0;
+  left: 0;
+  z-index: 1020;
+  padding: 1.5rem 1rem;
+  overflow-y: auto;
+  transition: var(--transition-smooth);
+}
+
+.app-main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  transition: var(--transition-smooth);
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.75rem 1rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+  margin-bottom: 4px;
+}
+
+.sidebar-link i {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Metric Cards */
+.stat-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.stat-icon.primary { background: #e0f2fe; color: #0284c7; }
+.stat-icon.success { background: #dcfce7; color: #16a34a; }
+.stat-icon.warning { background: #fef3c7; color: #d97706; }
+.stat-icon.purple  { background: #f3e8ff; color: #9333ea; }
+.stat-icon.danger  { background: #ffe4e6; color: #e11d48; }
+
+/* Status Badges */
+.badge-status {
+  padding: 0.4em 0.8em;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.badge-applied     { background: #e0f2fe; color: #0369a1; }
+.badge-shortlisted { background: #fef3c7; color: #b45309; }
+.badge-scheduled   { background: #f3e8ff; color: #6b21a8; }
+.badge-selected    { background: #dcfce7; color: #15803d; }
+.badge-rejected    { background: #ffe4e6; color: #be123c; }
+.badge-active      { background: #dcfce7; color: #15803d; }
+.badge-closed      { background: #f1f5f9; color: #475569; }
+
+/* Custom Buttons */
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+  transition: var(--transition-smooth);
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.35);
+  color: #fff;
+}
+
+/* Landing Page Hero */
+.hero-section {
+  padding: 6rem 0 4rem;
+  background: radial-gradient(circle at top right, rgba(13, 110, 253, 0.12), transparent 40%);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Table Styling */
+.table-custom {
+  border-collapse: separate;
+  border-spacing: 0 6px;
+}
+
+.table-custom tbody tr {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: var(--transition-smooth);
+}
+
+.table-custom tbody tr:hover {
+  transform: scale(1.002);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.table-custom th {
+  border: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.table-custom td {
+  border: none;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Loading Spinner Overlay */
+#loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+#loading-spinner.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Full Width Container layout for Auth Pages */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  padding: 2rem 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}

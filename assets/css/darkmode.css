@@ -1,0 +1,47 @@
+/* Dark Mode Overrides */
+body.dark-mode {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --card-bg: rgba(30, 41, 59, 0.85);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  color: #f8fafc;
+}
+
+body.dark-mode .app-header {
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .app-sidebar {
+  background: #0f172a;
+  border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .sidebar-link {
+  color: #94a3b8;
+}
+
+body.dark-mode .sidebar-link:hover,
+body.dark-mode .sidebar-link.active {
+  background: rgba(13, 110, 253, 0.2);
+  color: #60a5fa;
+}
+
+body.dark-mode .table-custom tbody tr {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+body.dark-mode .modal-content {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
